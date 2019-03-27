@@ -21,13 +21,18 @@
     <module>webapp</module>
   </modules>
 
-  <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
-  </distributionManagement>
+ <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>yakupseker-VirtualBox-releases</name>
+        <url>http://localhost:8081/artifactory/maven_depo</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>yakupseker-VirtualBox-snapshots</name>
+        <url>http://localhost:8081/artifactory/maven_depo</url>
+    </snapshotRepository>
+ </distributionManagement>
 
   <build>
     <plugins>
